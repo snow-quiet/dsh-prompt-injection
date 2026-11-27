@@ -1,0 +1,46 @@
+{
+  "name": "dsh-prompt-injection",
+  "version": "0.1.0",
+  "description": "Inject prompt text into every DeepSeek Harness model request without writing session events.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "prompt",
+    "prompt-injection"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snow-quiet/dsh-prompt-injection.git"
+  },
+  "homepage": "https://github.com/snow-quiet/dsh-prompt-injection#readme",
+  "bugs": {
+    "url": "https://github.com/snow-quiet/dsh-prompt-injection/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "logic.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "icon.svg",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

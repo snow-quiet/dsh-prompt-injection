@@ -1,0 +1,24 @@
+- insert:
+    - id: prompt-injection
+      name: 'dsh-prompt-injection'
+      config:
+        enabled: true
+        # Primary way to edit rules: Plugins -> dsh-prompt-injection ->
+        # prompt-injection row -> Configure. Values saved there live in the
+        # profile user layer and apply to the next request.
+        #
+        # The same fields can be set here for first install or automation:
+        # injections:
+        #   - name: rule-before-system
+        #     position: before-system
+        #     text: '...'
+        #   - name: rule-before-latest
+        #     position: before-latest
+        #     priority: 10
+        #     text: '...'
+        #   - name: rule-depth-4
+        #     position: at-depth
+        #     depth: 4
+        #     priority: 0
+        #     text: '...'
+        injections: []

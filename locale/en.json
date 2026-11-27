@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Prompt injection",
+    "description": "Injects configured text into every model request without writing session events: before or after the system prompt, at conversation start, before the latest user message, or at a depth counted from the end (default 4). Rules support a priority (higher numbers inject first; ties keep the configured order). Open Prompt injection in the left sidebar to edit rules; the same page is reachable from Plugins → this plugin → the prompt-injection row → Configure. Injected content is request-only — it never appears in history, is not counted by the token meter, and stops immediately when the plugin is disabled. It works by wrapping `Session.deriveMessages()`, an unsupported extension point that a DSH upgrade may break."
+  }
+}
